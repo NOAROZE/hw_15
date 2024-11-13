@@ -7,7 +7,7 @@ print("divisible by 7:", list(filter(lambda number: number % 7 == 0, list_random
 print("two digit numbers:", list(filter(lambda number: 9 <number < 100, list_random)))
 print("two digit numbers are same:", list(filter(lambda number: 9 <number < 100 and number % 10 == number // 10, list_random)))
 print("sum equal to 9:", list(filter(lambda number: number % 10 + number // 10 == 9, list_random)))
-avg = mean(list_random)
+avg = statistics.mean(list_random)
 print("bigger than average:", list(filter(lambda number: number > avg, list_random)))
 print(list(filter(lambda number: number > max(list_random) / 2, list_random)))
 #
