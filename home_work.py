@@ -16,7 +16,7 @@ print(list(filter(lambda number: number > max(list_random) / 2, list_random)))
 games: list[str] = ["Fortnite", "V Auto Theft Grand ", "The Elder Scrolls V: Skyrim", "Dark Souls", "Overwatch"]
 print("games with length bigger than 8 letters:", list(filter(lambda word: len(word) > 8, games)))
 print("Games that start with the letter F:", list(filter(lambda word: word.upper().startswith('F'), games)))
-print("A game with two words:", list(filter(lambda word: len(word.split(' ')) == 2, games)))
+print("A game with two words:", list(filter(lambda word: len(word.split() == 2, games)))
 print("A game with the V word:", list(filter(lambda word: 'V' in word.upper(), games)))
 #
 
